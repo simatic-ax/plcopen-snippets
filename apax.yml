@@ -1,3 +1,20 @@
-name: plcopen-snippets
-version: 0.0.0
+# General information
+name: '@simatic-ax/plcopen-snippets'
+version: 1.0.0
+author: Siemens AG
+# Description will be displayed in the apax extension
+description: This package contains PLCopen block templates as snippets for ST programming
 type: generic
+#URL to the repository
+repository:
+  type: git
+  url: https://github.com/simatic-ax/plcopen-snippets
+# Registry information, where the package will be published
+registries:
+  '@ax-showcase': 'https://npm.pkg.github.com/'
+# Files, which will be shipped with the library
+files:
+  - 'README.md'
+  - 'LICENSE.md'
+  - 'doc'
+  - 'snippets'
