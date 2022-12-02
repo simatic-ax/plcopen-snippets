@@ -1,6 +1,6 @@
 # Snippets collection
 
-A snippets collection of PLC OPEN block templates for AX Code.
+A snippets collection of PLCopen block templates for AX Code.
 
 ## Install the snippets collection
 
@@ -12,169 +12,26 @@ apax add @simatic-ax/plcopen-snippets --dev
 
 > to install this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.sharedstuff/blob/main/doc/personalaccesstoken.md)
 
-## AXUnitSupport
+<br/>
+<br/> 
 
-### Create a test fixture with AxUnit.Assert
+## Insert PLCopen block templates
 
-```json
-"prefix": ["AxUnit test-fixture"]
-```
-
-Output example:
-
-![io](doc/img/ax_test-fixture.gif)
-
-### Insert Using AxUnit.Assert
+### Under Contruction
 
 ```json
-"prefix": ["AxUnit, using ax"]
+... in work
 ```
 
-Output:
+## Insert general block templates
 
-```iecst
-USING AxUnit.Assert;
-```
-
-### AxUnit assertions
+### Under Contruction
 
 ```json
-"prefix": ["eq, ne, lt, gt"]
+... in work
 ```
-
-Output:
-
-```iecst
-Equal(expected := 0, actual := 0);
-NotEqual(expected := 0, actual := 0);
-LessThan(expected := 0, actual := 0);
-GreaterThan(expected := 0, actual := 0);
-```
-
-## Snippets Namespace Support
-
-### NamespaceSupport
-
-```json
-"prefix" : ["namespace, Siemens"]
-```
-
-Output:
-
-```iecst
-NAMESPACE Simatic.Ax
-    
-END_NAMESPACE
-```
-
-### Snippets for class support
-
-```json
-"prefix" : ["class template, End_Class"]
-```
-
-Output:
-
-```iecst
-NAMESPACE Simatic.Ax
-    CLASS Untitled
-        VAR PUBLIC
-            
-        END_VAR
-        VAR PROTECTED
-            
-        END_VAR
-        
-        METHOD PUBLIC MyMethod
-            ;
-        END_METHOD
-    END_CLASS
-END_NAMESPACE
-```
-
-### ClassMethodSupport
-
-```json
-"prefix" : ["method, no return"]
-```
-
-Output:
-
-```iecst
-METHOD PUBLIC|PRIVATE|PROTECTED MyMethod
-    ;
-END_METHOD
-
-METHOD PUBLIC|PRIVATE|PROTECTED MyMethod : Type
-     MyMethod := ;
-END_METHOD
-
-// types: BOOL,INT,LREAL,WORD,REAL,DINT,UINT,SINT
-```
-
-### VAR sections within classes
-
-```json
-"prefix" : ["varc"]
-```
-
-Output:
-
-```iecst
-VAR PUBLIC|PRIVATE|PROTECTED 
-    ;
-END_VAR
-```
-
-### VAR sections within methods and functions
-
-```json
-"prefix" : ["vari"]
-```
-
-Output:
-
-```iecst
-VAR_INPUT|VAR_OUTPUT|VAR_IN_OUT|VAR_TEMP|VAR CONSTANT
-    count: INT;
-END_VAR
-```
-
-## Enumeration
-
-```json
-"prefix" : ["enum"]
-```
-
-Output:
-
-```iec-st
-TYPE
-    Colours : (RED, GREEN, BLUE) := RED;
-END_TYPE
-```
-
-## IO support
-
-```json
-"prefix" : ["io"]
-```
-
-Support for creating IO Tags in the VAR_GLOBAL section. Suported types `BOOL`, `BYTE`, `WORD`, `DWORD`
-
-Output example:
-
-![io](doc/img/io_snippet.gif)
-
-## Iterate ARRAY[*] Snippet
-
-```json
-"prefix" : ["Iterate Array*"]
-```
-
-Output example:
-
-![io](doc/img//iterate_array_star.gif)
+<br/>
+<br/> 
 
 ## Contribution
 
