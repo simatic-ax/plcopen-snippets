@@ -5,8 +5,7 @@ PLCopen standard **'Function Blocks for Motion Control' V2.0** which can also be
 
 Besides this collection consists of 6 PLCopen snippets (3x "Execute"-variants / 3x "Enable"-variants) we also added 4x basic FC's and 4x basic FB's variants inspired by PLCopen that should emphasise you to build more predictable block interfaces.  
 
-BEWARE ! This package has no OOP content 
-
+<br/> 
 <br/> 
 
 ## Install the snippets collection
@@ -64,6 +63,17 @@ Differences: <br>
 ![io](doc/img/generalblock_insert.gif)
 
 </details>
+<br/>
+<br/>
+
+
+## Notes from the developer:
+
+BEWARE ! This package has no ST OOP content and currently include TIAX restrictions, which unfortunatly will cause compile errors using it blank in "AX2TIA" projects. <br>
+We are working on it to fix it. 
+
+🐱‍💻 BEEP, BOOP, BEEP, BEEP, BOOP 🐱‍🏍
+
 <br/>
 <br/>
 
