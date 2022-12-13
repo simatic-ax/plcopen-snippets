@@ -15,9 +15,9 @@ To install the snippets collection to your workspace enter the following command
 ```bash
 apax add @simatic-ax/plcopen-snippets --dev
 ```
-> Installing snippet-packages to your project / ax code-instance may cause you to restart the IDE in order to make them work for the intellicense.
-
 > To install this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.sharedstuff/blob/main/doc/personalaccesstoken.md).
+
+> Installing snippet-packages to your project / ax code-instance may cause you to restart the IDE in order to make them work for the intellicense.
 
 <br/>
 <br/> 
@@ -26,10 +26,10 @@ apax add @simatic-ax/plcopen-snippets --dev
 
 Available variants:
 ```json
-"fb enable" : [" 1_simple | 2_adv | 3_adv"]
+"fb enable" : [" 1_simple | 2_adv | 3_adv "]
 ```
 ```json
-"fb execute" : [" 1_simple | 2_adv | 3_adv"]
+"fb execute" : [" 1_simple | 2_adv | 3_adv "]
 ``` 
 Differences: <br>
 - all variants consists of the corresponding statemachines, all its needed variables and an proper error/ output-handling
@@ -53,7 +53,7 @@ Available variants:
 "fc" : [" 1_simple | 2_simple | 3_simple | 4_adv "]
 ```
 Differences: <br>
-- the *"1_simple"* variant is the most basic frame of the block with no specialty
+- the *"1_simple"* variant is the most basic frame of the block with no speciality
 - the *"2_simple"* variant adds a simple frame to handle subfunction-block-status info
 - the *"3_simple"* variant additional have a subfunction block-status info
 - the *"4_adv"* variant have an additional diagnostic-structure handling holding on to the block last error info
@@ -69,7 +69,7 @@ Differences: <br>
 
 ## Notes from the developer:
 
-BEWARE ! This package has no ST OOP content and currently include TIAX restrictions, which unfortunatly will cause compile errors using it blank in "AX2TIA" projects. <br>
+BEWARE ! This package has no ST OOP content and currently include TIAX restrictions, which unfortunatly will cause compile errors using it blank in "AX2TIA" projects. Otherwise it's fine. <br>
 We are working on it to fix it. 
 
 🐱‍💻 BEEP, BOOP, BEEP, BEEP, BOOP 🐱‍🏍
