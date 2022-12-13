@@ -70,7 +70,7 @@ Differences: <br>
 ## Notes from the developer:
 
 BEWARE ! This package has no ST OOP content and currently include TIAX restrictions, which unfortunatly will cause compile errors using it blank in "AX2TIA" projects. Otherwise it's fine. <br>
-We are working on it to fix it. 
+We are working on it. 
 
 🐱‍💻 BEEP, BOOP, BEEP, BEEP, BOOP 🐱‍🏍
 
