@@ -3,7 +3,7 @@ name: '@simatic-ax/plcopen-snippets'
 version: 1.0.0-placeholder
 author: Siemens AG
 # Description will be displayed in the apax extension
-description: This package contains PLCopen block templates as snippets for ST programming
+description: This package contains PLCopen block templates as snippets for ST programming in SIMATIC AX
 type: generic
 #URL to the repository
 repository:
