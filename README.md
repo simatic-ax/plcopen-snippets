@@ -10,6 +10,13 @@ Besides this collection consists of 6 PLCopen snippets (3x "Execute"-variants / 
 
 ## Install the snippets collection
 
+Before installing the snippets collection, the URL to the package registry need to be defined in the apax.yml
+
+```yml
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
+```
+
 To install the snippets collection to your workspace enter the following command in a terminal:
 
 ```bash
@@ -36,7 +43,8 @@ Differences: <br>
 - all *"_adv"* variants have an additional diagnostic-structure handling holding on to the block last error info
 - the *"3_adv"* variant adds a frame to abort the enable/execute statemachines beforehand
 
-<details><summary>Show Output example:</summary>
+<details open>
+<summary>Show Output example:</summary>
 
 ![io](doc/img/plcopen_insert.gif)
 
@@ -58,7 +66,8 @@ Differences: <br>
 - the *"3_simple"* variant additional have a subfunction block-status info
 - the *"4_adv"* variant have an additional diagnostic-structure handling holding on to the block last error info
 
-<details><summary>Show Output example:</summary>
+<details open>
+<summary>Show Output example:</summary>
 
 ![io](doc/img/generalblock_insert.gif)
 
