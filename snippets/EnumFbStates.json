@@ -1,0 +1,20 @@
+{
+    "Insert General BlockTemplates": {
+    "scope": "javascript,typescript,st",
+    "prefix": ["type, plcopen, FbStates enum"],
+    "body": [
+        "TYPE",
+        "\t// TODO please personalize enum(name)",
+        "\tFbStates : DINT (",
+        "\t\tNO_PROCESSING := 0,  //  FB state: No processing",
+        "\t\tPROCESSING_1 := 1,   //  FB state: Processing 1",
+        "\t\tPROCESSING_2 := 2,   //  FB state: Processing 2",
+        "\t\tENABLING := 10,      //  FB state: Enabling",
+        "\t\tPROCESSING := 50,    //  FB state: Processing",
+        "\t\tDISABLING := 90      //  FB state: Disabling",
+        "\t) := NO_PROCESSING;",
+        "END_TYPE"
+    ],
+    "description": "[PLCOPEN-SNIPPETS] Enum for Exec/En (All)"
+    }
+}

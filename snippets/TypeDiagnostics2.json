@@ -1,0 +1,17 @@
+{
+    "Insert General BlockTemplates": {
+    "scope": "javascript,typescript,st",
+    "prefix": ["type, plcopen, Diagnostics struct"],
+    "body": [
+        "TYPE",
+        "\t// TODO please personalize type(name)",
+        "\tDiagnostics : STRUCT",
+        "\t\tStatus : WORD;   // Status of the Block or error identification when error occurred",
+        "\t\tSubfunctionStatus : WORD;   // Status or return value of called FB's, FCs and system blocks",
+        "\t\tStateNumber : DINT;   // State in the state machine of the block where the error occurred",
+        "\tEND_STRUCT;",
+        "END_TYPE"         
+    ],
+    "description": "[PLCOPEN-SNIPPETS] Type for Exec/En (Adv V1/2)"
+    }
+}

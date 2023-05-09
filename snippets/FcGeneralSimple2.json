@@ -3,7 +3,9 @@
     "scope": "javascript,typescript,st",
     "prefix": ["fc, 2_simple"],
     "body": [
-        "FUNCTION_BLOCK ${TM_FILENAME/(.*)\\..+$/$1/}",
+
+        "FUNCTION ${1:YourFcGeneralSimple2}",
+        "\t// TODO please personalize block(name)",
 
         "\t",
         "\tVAR_INPUT",
@@ -12,25 +14,25 @@
 
         "\t",
         "\tVAR_OUTPUT",
-        "\t\terror : Bool;   //  TRUE: An error occurred during the execution of the FC",
-        "\t\tstatus : Word;   //  WORD#16#0000 - WORD#16#7FFF: Status of the FB, WORD#16#8000 - WORD#16#FFFF: Error identification",
+        "\t\terror : BOOL;   //  TRUE: An error occurred during the execution of the FC",
+        "\t\tstatus : WORD;   //  WORD#16#0000 - WORD#16#7FFF: Status of the FB, WORD#16#8000 - WORD#16#FFFF: Error identification",
         "\tEND_VAR",
 
         "\t",
         "\tVAR_TEMP",
-        "\t\ttempStatus : Word;   //  temp value for output 'status'",      
+        "\t\ttempStatus : WORD;   //  temp value for output 'status'",      
         "\tEND_VAR",
 
         "\t",
         "\tVAR CONSTANT",
-        "\t\tSTATUS_FINISHED_NO_ERROR : Word := WORD#16#0000;   //  NO error - execution finished without errors",
-        "\t\tERR_UNDEFINED : Word := WORD#16#8000;   //  Error: due to an undefined case",
-        "\t\tERR_IN_BLOCK_OPERATION : Word := WORD#16#8001;   //  Error: Wrong operation of the function block",
-        "\t\tERR_PARAMETRIZATION : Word := WORD#16#8200;   //  Error: during parameterization",
-        "\t\tERR_PROCESSING_EXTERN : Word := WORD#16#8400;   //  Error: when processing from outside (e. g. wrong I/O signals, axis not referenced)",
-        "\t\tERR_PROCESSING_INTERN : Word := WORD#16#8600;   //  Error: when processing internally (e. g. when calling a system function)",
-        "\t\tERR_AREA_RESERVED : Word := WORD#16#8800;   //  Error: Reserved area",
-        "\t\tERR_USER_DEFINED_CLASSES : Word := WORD#16#9000;   //  Error: User-defined error classes       ",
+        "\t\tSTATUS_FINISHED_NO_ERROR : WORD := WORD#16#0000;   //  NO error - execution finished without errors",
+        "\t\tERR_UNDEFINED : WORD := WORD#16#8000;   //  Error: due to an undefined case",
+        "\t\tERR_IN_BLOCK_OPERATION : WORD := WORD#16#8001;   //  Error: Wrong operation of the function block",
+        "\t\tERR_PARAMETRIZATION : WORD := WORD#16#8200;   //  Error: during parameterization",
+        "\t\tERR_PROCESSING_EXTERN : WORD := WORD#16#8400;   //  Error: when processing from outside (e. g. wrong I/O signals, axis not referenced)",
+        "\t\tERR_PROCESSING_INTERN : WORD := WORD#16#8600;   //  Error: when processing internally (e. g. when calling a system function)",
+        "\t\tERR_AREA_RESERVED : WORD := WORD#16#8800;   //  Error: Reserved area",
+        "\t\tERR_USER_DEFINED_CLASSES : WORD := WORD#16#9000;   //  Error: User-defined error classes       ",
         "\tEND_VAR",
 
         "${C:",
@@ -54,16 +56,19 @@
 
         "${C:",
         "    // TODO: Initialize functionality: reset of variables, diagnostics, etc.",
+        "    //",
         "    tempStatus := STATUS_FINISHED_NO_ERROR;",
         "    ",
         "    // TODO: Use this region for application specific code",
+        "    //",
         "    ",
         "    // TODO: Write application specific temp values to outputs",
+        "    //",
         "    error := tempStatus.%X15;",
         "    status := tempStatus;",
         "}",
 
-        "END_FUNCTION_BLOCK"         
+        "END_FUNCTION"         
     ],
     "description": "[PLCOPEN-SNIPPETS] FC general (Simple V2)"
     }

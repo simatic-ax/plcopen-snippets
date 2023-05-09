@@ -3,26 +3,28 @@
     "scope": "javascript,typescript,st",
     "prefix": ["fc, 1_simple"],
     "body": [
-        "FUNCTION_BLOCK ${TM_FILENAME/(.*)\\..+$/$1/}",
+
+        "FUNCTION ${1:YourFcGeneralSimple1}",
+        "\t// TODO please personalize block(name)",
 
         "\t",
         "\tVAR_INPUT",
-        "\t\tmyInputVariable : Int;   //  add a constant to the given actual value",
+        "\t\tmyInputVariable : INT;   //  add a constant to the given actual value",
         "\tEND_VAR",
 
         "\t",
         "\tVAR_OUTPUT",
-        "\t\tmyOutputVariable : Int;   //  input value + constant",
+        "\t\tmyOutputVariable : INT;   //  input value + constant",
         "\tEND_VAR",
 
         "\t",
         "\tVAR_TEMP",
-        "\t\ttempVariable : Int;   //  temp value for anything",   
+        "\t\ttempVariable : INT;   //  temp value for anything",   
         "\tEND_VAR",
 
         "\t",
         "\tVAR CONSTANT",
-        "\t\tTEMPORARY_INIT_VALUE : Int := 10;   //  value for the initialisation of the temporary tag",
+        "\t\tTEMPORARY_INIT_VALUE : INT := 10;   //  value for the initialisation of the temporary tag",
         "\tEND_VAR",
 
         "${C:",
@@ -46,10 +48,11 @@
 
         "${C:",
         "    // TODO: Initialize functionality: reset of variables, diagnostics, etc.",
+        "    //",       
         "    tempVariable := TEMPORARY_INIT_VALUE;",
         "    ",
         "    // TODO: Use this region for application specific code",
-        "    ",
+        "    //",
         "    // just an example code fragment",
         "    tempVariable := tempVariable + myInputVariable;",
         "    ",
@@ -57,7 +60,7 @@
         "    myOutputVariable := tempVariable;",
         "}",
 
-        "END_FUNCTION_BLOCK"         
+        "END_FUNCTION"         
     ],
     "description": "[PLCOPEN-SNIPPETS] FC general (Simple V1)"
     }
