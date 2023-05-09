@@ -1,4 +1,4 @@
-# PLCopen Snippets
+# PLCopen Snippets 
 
 The following block-template snippets for AX Code are based on the
 PLCopen-like standard **'Function Blocks for Motion Control' V2.0** which can also be found in the LGF library for TIA Portal [here](https://support.industry.siemens.com/cs/ww/en/view/109479728).
@@ -6,12 +6,12 @@ PLCopen-like standard **'Function Blocks for Motion Control' V2.0** which can al
 This collection consists of 6x PLCopen FB code-snippets (3x "Execute"-variants / 3x "Enable"-variants) plus 2x complementary structured-types. We also added 4x basic FC's and 4x basic FB's variants inspired by PLCopen, which in addition should emphasise you to build more predictable blocks(interfaces) with standardized execution behaviours.
 These vscode snippets gives you a head-start in content creation for your very own SIMATIC AX library or application.
 
-## About: PLCopen <br/>
+## About: PLCopen ##
 *"The PLCopen organization has defined a standard for Motion Control blocks. This standard can be generalized in that way, that it can be applied to all asynchronous blocks. Asynchronous means in this context, that the execution of the function inside the block extends over multiple (more than one) execution cycles of the PLC, e.g. for communication, closed loop control or motion control applications."*
 <br/>
 <br/>
 
-### A function block with an **"enable"** - behaviour:
+### A function block with an **"enable"** - behaviour: ###
 *"Blocks which are started and initialized only once and afterwards remain in operation to respond to inputs have an "enable" input parameter.
 Example: A communication block (acting as server) waits after initialization for incoming connection requests from a client. After a successful data exchange the server waits for other incoming connection requests.
 Setting the parameter "enable" starts the execution of an asynchronous task. If "enable" remains set, the task execution remains active and new values are being accepted and processed.
