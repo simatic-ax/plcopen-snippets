@@ -44,13 +44,17 @@ registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 ```
 
+Login to the registry if not not yet done and follow the input requests :
+```bash
+apax login --registry https://npm.pkg.github.com/
+```
 Install the snippets collection to your workspace by entering the following command in a terminal:
 
 ```bash
 apax add @simatic-ax/plcopen-snippets --dev
 ```
 
-> - For installing this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.sharedstuff/blob/main/doc/personalaccesstoken.md).
+> - For installing this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.github-private/blob/main/docs/personalaccesstoken.md).
 > - Installing snippet-packages to your project / ax code-instance may cause you to restart the IDE in order to make them work for the intellicense.
 
 <br/>
@@ -146,6 +150,15 @@ Happy coding ...
 ## Contribution
 
 Thanks for your interest in contributing. Anybody is free to report bugs, improvements, unclear documentation, and other problems regarding this repository in the "Issues" section ... or, even better, is free to propose any changes to this repository using "Merge-Requests". The CODEOWNERS will take care.
+
+## Markdownlint-cli
+
+This workspace will be checked by the [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) tool in the CI workflow automatically. 
+To avoid, that the CI workflow fails because of the markdown linter, you can check and auto-fix all markdown files locally using the following command:
+
+```sh
+markdownlint **/*.md --fix
+```
 
 ## License and Legal information
 
