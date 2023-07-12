@@ -45,9 +45,11 @@ registries:
 ```
 
 Login to the registry if not not yet done and follow the input requests :
+
 ```bash
 apax login --registry https://npm.pkg.github.com/
 ```
+
 Install the snippets collection to your workspace by entering the following command in a terminal:
 
 ```bash
@@ -153,7 +155,7 @@ Thanks for your interest in contributing. Anybody is free to report bugs, improv
 
 ## Markdownlint-cli
 
-This workspace will be checked by the [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) tool in the CI workflow automatically. 
+This workspace will be checked by the [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) tool in the CI workflow automatically.
 To avoid, that the CI workflow fails because of the markdown linter, you can check and auto-fix all markdown files locally using the following command:
 
 ```sh
