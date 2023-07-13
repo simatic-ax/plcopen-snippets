@@ -8,6 +8,12 @@ These vscode snippets gives you a head-start in content creation for your very o
 
 ## About: PLCopen
 
+<br/>
+
+<center><img src="doc/img/plcopen.png" width="120"></center>
+
+<br/>
+
 *"The PLCopen organization has defined a standard for Motion Control blocks. This standard can be generalized in that way, that it can be applied to all asynchronous blocks. Asynchronous means in this context, that the execution of the function inside the block extends over multiple (more than one) execution cycles of the PLC, e.g. for communication, closed loop control or motion control applications."*
 <br/>
 <br/>
@@ -156,9 +162,17 @@ Thanks for your interest in contributing. Anybody is free to report bugs, improv
 ## Markdownlint-cli
 
 This workspace will be checked by the [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) tool in the CI workflow automatically.
-To avoid, that the CI workflow fails because of the markdown linter, you can check and auto-fix all markdown files locally using the following command:
+To avoid, that the CI workflow fails because of the markdown linter, you can install and auto-check/fix all markdown files locally using the following commands in your project cli.
 
-```sh
+Install:
+
+```bash
+npm install -g markdownlint-cli
+```
+
+Auto-Fix all:
+
+```bash
 markdownlint **/*.md --fix
 ```
 
