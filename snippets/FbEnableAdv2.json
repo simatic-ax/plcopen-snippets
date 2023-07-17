@@ -169,7 +169,7 @@
         "    IF (_disablingCompleted = TRUE) THEN",
         "        // Reset outputs if disabling completed",
         "        _valid := FALSE;",
-        "        _ubsy := FALSE;",
+        "        _busy := FALSE;",
         "        _commandAborted := FALSE;",
         "        _error := FALSE;",
         "        _errorUserCleared := FALSE;",
