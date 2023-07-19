@@ -97,7 +97,7 @@ Complementary plc-types: <br>
 "type, plcopen," : ["FbStates enum"]
 ```
 
-These types can be used to complete a clean block plcopen construct. After insertion you easily can change the name and it's type-references in the corresponding block-templates by marking (double-click) the default type-name followed by pressing "F2" on the keyboard. 
+These types can be used to complete a clean block plcopen construct. After insertion you easily can change the name and it's type-references in the corresponding block-templates by marking (double-click) the default type-name followed by pressing "F2" on the keyboard.
 
 <details close>
 <summary>Show usage example:</summary>
