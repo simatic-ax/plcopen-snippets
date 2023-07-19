@@ -97,7 +97,7 @@ Complementary plc-types: <br>
 "type, plcopen," : ["FbStates enum"]
 ```
 
-These types can be used to complete a clean block & type plcopen construct. After insertion you easily can change the name and it's type-references in the block-templates by
+These types can be used to complete a clean block plcopen construct. After insertion you easily can change the name and it's type-references in the corresponding block-templates by marking (double-click) the default type-name followed by pressing "F2" on the keyboard. 
 
 <details close>
 <summary>Show usage example:</summary>
@@ -111,7 +111,7 @@ These types can be used to complete a clean block & type plcopen construct. Afte
 
 ## Use general block templates
 
-You can use the intellicense in the scope of a .st file to make use of the snippets. <br>
+You can use the intellicense/ auto-completion in the scope of a .st file to make use of the snippets. <br>
 Just start typing-in the following  available variants:
 
 ```json
