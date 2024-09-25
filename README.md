@@ -62,7 +62,7 @@ Install the snippets collection to your workspace by entering the following comm
 apax add @simatic-ax/plcopen-snippets --dev
 ```
 
-> - For installing this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.github-private/blob/main/docs/personalaccesstoken.md).
+> - For installing this package you need to login into the GitHub registry. You'll find more information [here](https://github.com/simatic-ax/.github/blob/main/docs/personalaccesstoken.md).
 > - Installing snippet-packages to your project / ax code-instance may cause you to restart the IDE in order to make them work for the intellicense.
 
 <br/>
